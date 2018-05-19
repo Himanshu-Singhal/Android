@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <android.support.v7.widget.FitWindowsLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="209dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:text="@string/quantity"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                tools:layout_editor_absoluteX="34dp"
+                tools:layout_editor_absoluteY="24dp" />
+
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="55dp"
+                android:layout_height="47dp"
+                android:onClick="decrement"
+                android:text="@string/minus"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/_0"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                tools:layout_editor_absoluteX="234dp"
+                tools:layout_editor_absoluteY="28dp" />
+
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="55dp"
+                android:layout_height="46dp"
+                android:onClick="increment"
+                android:text="@string/plus"
+                android:textSize="18sp"
+
+                tools:layout_editor_absoluteX="314dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="32dp"
+                android:paddingTop="8dp"
+                android:text="@string/price"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                tools:layout_editor_absoluteX="47dp"
+                tools:layout_editor_absoluteY="78dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="135dp"
+                android:text="@string/textview"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                tools:layout_editor_absoluteX="242dp"
+                tools:layout_editor_absoluteY="82dp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="submitOrder"
+            android:padding="8dp"
+            android:text="@string/button"
+            tools:layout_editor_absoluteX="108dp"
+            tools:layout_editor_absoluteY="161dp" />
+
+
+    </android.support.v7.widget.FitWindowsLinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
